@@ -1,6 +1,6 @@
 Import-Module UniversalDashboard
 
-$sched = New-UDEndpointSchedule -Every 30 -Second
+$sched = New-UDEndpointSchedule -Every 5 -Minute
 $exp = New-UDEndpoint -Endpoint {
     $cache:experiment = Get-Date
 } -Schedule $sched
